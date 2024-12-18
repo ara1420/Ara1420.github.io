@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自販機の値段サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>自販機の値段サイト</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">商品一覧</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- トップセクション -->
+        <section id="intro">
+            <h2>ようこそ！</h2>
+            <p>地域別・メーカー別で自販機の商品と値段を比較できます。</p>
+        </section>
+
+        <!-- 商品一覧セクション -->
+        <section id="products">
+            <h2>商品一覧</h2>
+            <div class="filters">
+                <label for="region">地域:</label>
+                <select id="region">
+                    <option value="tokyo">東京</option>
+                    <option value="osaka">大阪</option>
+                    <option value="kyoto">京都</option>
+                </select>
+                <label for="manufacturer">メーカー:</label>
+                <select id="manufacturer">
+                    <option value="coca-cola">Coca-Cola</option>
+                    <option value="suntory">サントリー</option>
+                    <option value="asahi">アサヒ</option>
+                </select>
+            </div>
+            <div class="product-list">
+                <div class="product">
+                    <img src="drink1.jpg" alt="商品1">
+                    <h3>コカ・コーラ</h3>
+                    <p>¥150</p>
+                </div>
+                <div class="product">
+                    <img src="drink2.jpg" alt="商品2">
+                    <h3>アクエリアス</h3>
+                    <p>¥140</p>
+                </div>
+                <!-- ここに商品を追加 -->
+            </div>
+        </section>
+
+        <!-- お問い合わせセクション -->
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form>
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 自販機の値段サイト</p>
+    </footer>
+</body>
+</html>
